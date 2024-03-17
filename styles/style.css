@@ -18,6 +18,7 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+
 }
 
 h1,
@@ -43,7 +44,7 @@ ol {
   display: flex;
   justify-content: end;
   gap: 30px;
-  padding: 133px 30px;
+  padding: 133px 0;
 }
 
   .search-form {
@@ -54,6 +55,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   max-height: 534px;
   overflow-y: scroll;
 }
@@ -64,4 +66,30 @@ ol {
 }
 .title {
   padding-bottom: 26px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+}
+
+.content__list-item:not(:last-child){
+  padding-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+  /* flex-grow: 1; */
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
 }
