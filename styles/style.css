@@ -49,9 +49,9 @@ ol {
 
   .search-form {
     display: flex;
-    gap: 40px;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 40px;
 }
 
 .content__list {
@@ -66,6 +66,20 @@ ol {
 }
 .title {
   padding-bottom: 26px;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.content__accent {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #545050;
+  font-weight: 700;
 }
 
 .result__video-container {
@@ -92,4 +106,28 @@ ol {
 
 .content__video-card-description-container {
   width: 100%;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.content__card-link {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.content__video-card-title {
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content__video-card-description {
+  line-height: 90%;
 }
