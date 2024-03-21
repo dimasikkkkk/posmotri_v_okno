@@ -55,6 +55,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -81,6 +82,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   padding-bottom: 16px;
   width: 711px;
 }
