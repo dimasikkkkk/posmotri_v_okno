@@ -44,8 +44,8 @@ ol {
   display: flex;
   justify-content: end;
   gap: 30px;
-  padding: 133px 0;
   margin: auto;
+  padding: 133px 0;
 }
 
 .search-form {
@@ -79,12 +79,20 @@ ol {
 
 .title {
   padding-bottom: 26px;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .result__video-container {
   position: relative;
-  padding-bottom: 16px;
   width: 711px;
+  padding-bottom: 16px;
 }
 
 .result__video {
@@ -96,9 +104,9 @@ ol {
 
 .content__video-card {
   display: flex;
+  flex-grow: 1;
   /* justify-content: flex-start; */
   align-items: flex-start;
-  flex-grow: 1;
 }
 
 .content__video-card-thumbnail {
@@ -109,4 +117,29 @@ ol {
 .content__video-card-description-container {
   width: 100%;
   overflow: hidden;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 90%;
+  font-weight: 400;
 }
