@@ -134,9 +134,12 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
+  margin: 2px;
 }
+
 
 .content__video-card-title {
   font-size: 30px;
@@ -270,6 +273,11 @@ ol {
 }
 
 .button:active,
-.content__video-card:active {
+.content__video-card:active
+ {
+  background: #545050;
+}
+
+.content__card-link_current {
   background: #545050;
 }
