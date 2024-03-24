@@ -233,3 +233,43 @@ ol {
   width: 399px;
   height: 34px;
 }
+
+.search-form__label:has(:focus-visible),
+.search-form__checkbox:has(:focus-visible),
+.button:has(:focus-visible),
+.content__card-link:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
+  background-color: #fff;
+  display: block;
+  position: relative;
+  content: "";
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  background-color: #fff;
+  display: block;
+  position: relative;
+  content: "";
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+}
+
+.button:hover,
+.content__card-link:hover,
+.search-form__label:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active,
+.content__video-card:active {
+  background: #545050;
+}
