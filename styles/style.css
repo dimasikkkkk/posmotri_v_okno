@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: auto;
   color: #fff;
@@ -43,40 +43,324 @@ ol {
 
 .content {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
+  width: 1140px;
+}
+
+.content:first-child {
   gap: 30px;
-  padding: 30px;
 }
 
 /* Video result*/
-
-.search-form {
+.result {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: flex-start;
-  row-gap: 40px;
+  gap: 10px;
+  width: 711px;
 }
 
+.result__video-container {
+  position: relative;
+  width: 100%;
+}
 
+.result__video {
+  width: 100%;
+  height: 386px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 36px;
+  padding-bottom: 5px;
+}
+
+.search-form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  width: 227px;
+  height: 27px;
+  border-top: 1px solid currentColor;
+  border-right: none;
+  border-bottom: 1px solid currentColor;
+  border-left: none;
+  color: #fff;
+  font-family: inherit;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: transparent;
+  appearance: none;
+}
+
+.search-form__label-text {
+  padding-left: 4px;
+}
+
+.search-form__label-text::placeholder {
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  cursor: text;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 20px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 
 
 /* Video list */
 
 .content__details {
-  min-width: 100%;
-  min-height: 100%;
+  width: 399px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .title {
   padding-bottom: 26px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  padding-bottom: 26px;
+  color: #545050;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  height: 534px;
+  align-items: flex-start;
+  height: 298px;
   overflow-y: auto;
 }
 
+.content__list-item {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.content__card-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90%;
+}
+
+
+/* Button */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.search-form__submit-button {
+ padding: 6px 73.5px;
+}
+
+.more-button {
+  padding: 6px 136.5px;
+  margin-bottom: 2px;
+}
+
+.more-button-template {
+  padding-bottom: 20px;
+}
+
+
+/* СОСТОЯНИЕ ЭЛЕМЕНТОВ, ФОРМ И КНОПОК */
+
+/* Focus & focus-visible */
+
+.search-form__textfield:focus,
+.button:focus,
+.content__card-link:focus {
+  outline: none;
+}
+
+.search-form__fieldset:focus-visible,
+.search-form__label:has(:focus-visible),
+.button:focus-visible,
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+/* Hover */
+
+.search-form__label:has(.search-form__checkbox):hover,
+.button:hover,
+.content__card-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Active */
+
+.search-form__checkbox:active {
+  outline: 1px solid #fff;
+}
+
+.button:active,
+.content__card-link:active,
+.content__card-link_current {
+  background-color: #545050;
+}
+
+
+/* Активный чекбокс */
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  background-color: #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  background-color: #fff;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  background-color: #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  background-color: #fff;
+}
