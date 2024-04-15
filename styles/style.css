@@ -158,8 +158,6 @@ ol {
   white-space: nowrap;
 }
 
-
-
 /* Video list */
 
 .content__details {
@@ -252,7 +250,6 @@ ol {
   line-height: 90%;
 }
 
-
 /* Button */
 
 .button {
@@ -282,7 +279,6 @@ ol {
 .more-button-template {
   padding-bottom: 20px;
 }
-
 
 /* СОСТОЯНИЕ ЭЛЕМЕНТОВ, ФОРМ И КНОПОК */
 
@@ -321,7 +317,6 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
-
 
 /* Активный чекбокс */
 
