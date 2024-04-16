@@ -196,9 +196,13 @@ ol {
   overflow-y: auto;
 }
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   width: 100%;
   padding-bottom: 30px;
+}
+
+.content__list-item:last-of-type {
+  width: 100%;
 }
 
 .content__card-link {
@@ -250,6 +254,7 @@ ol {
   line-height: 90%;
 }
 
+
 /* Button */
 
 .button {
@@ -273,11 +278,7 @@ ol {
 
 .more-button {
   padding: 6px 136.5px;
-  margin-bottom: 2px;
-}
-
-.more-button-template {
-  padding-bottom: 20px;
+  outline-offset: -1px;
 }
 
 /* СОСТОЯНИЕ ЭЛЕМЕНТОВ, ФОРМ И КНОПОК */
@@ -318,27 +319,8 @@ ol {
   background-color: #545050;
 }
 
+
 /* Активный чекбокс */
-
-.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 15px;
-  height: 15px;
-  padding: 1px;
-  background-color: #fff;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 15px;
-  height: 15px;
-  padding: 1px;
-  background-color: #fff;
-}
 
 .search-form__checkbox:active + .search-form__pseudo-checkbox::before {
   content: "";
